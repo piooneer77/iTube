@@ -13,7 +13,19 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupControllers()
+        setViewsConstraints()
+        view.backgroundColor = UIColor(red: 42, green: 43, blue: 54)
+        tabBar.tintColor = .black
+        tabBar.barStyle = UIBarStyle.black
     }
+    
+    let playerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .blue
+        
+        return view
+    }()
     
     private func setupControllers(){
         setTabImagesAndTitles()
@@ -32,6 +44,35 @@ class MainTabBarController: UITabBarController {
 //
 //        SharedObject.providerViewController.tabBarItem.title = SharedValues.ProviderController.tabbarTitle
 //        SharedObject.providerViewController.tabBarItem.image = SharedValues.ProviderController.tabbarIcon
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }
+    
+}
+
+extension MainTabBarController {
+    
+    fileprivate func setViewsConstraints() {
+        addSubViewsInsideMainViews()
+        setPlayerViewConstraints(control: playerView)
+//        setTabsViewConstraints(control: tabBarView)
+    }
+    
+    private func addSubViewsInsideMainViews(){
+        view.addSubview(playerView)
+//        view.addSubview(tabBarView)
+        
+    }
+    
+    private func setPlayerViewConstraints(control: UIView){
+        NSLayoutConstraint.activate([
+            control.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            control.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            control.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.35),
+            control.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+            ])
     }
     
 }
