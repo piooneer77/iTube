@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124BF7B13600F0CDDC083C3D /* Pods_iTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8156F2A792F1FFE83765C0F /* Pods_iTube.framework */; };
 		18AF9B0221018C5A00DEA097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF9B0121018C5A00DEA097 /* AppDelegate.swift */; };
-		18AF9B0421018C5A00DEA097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF9B0321018C5A00DEA097 /* ViewController.swift */; };
-		18AF9B0721018C5A00DEA097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AF9B0521018C5A00DEA097 /* Main.storyboard */; };
 		18AF9B0921018C5B00DEA097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AF9B0821018C5B00DEA097 /* Assets.xcassets */; };
 		18AF9B0C21018C5B00DEA097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AF9B0A21018C5B00DEA097 /* LaunchScreen.storyboard */; };
+		18AF9B1A210190CC00DEA097 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF9B19210190CC00DEA097 /* MainTabBarController.swift */; };
+		18AF9B1C2101916A00DEA097 /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF9B1B2101916A00DEA097 /* GenericService.swift */; };
+		18AF9B1E2101921000DEA097 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF9B1D2101921000DEA097 /* Method.swift */; };
+		18AF9B202101924F00DEA097 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF9B1F2101924F00DEA097 /* Object.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18AF9AFE21018C5A00DEA097 /* iTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AF9B0121018C5A00DEA097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18AF9B0321018C5A00DEA097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18AF9B0621018C5A00DEA097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18AF9B0821018C5B00DEA097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AF9B0B21018C5B00DEA097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AF9B0D21018C5B00DEA097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AF9B19210190CC00DEA097 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		18AF9B1B2101916A00DEA097 /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		18AF9B1D2101921000DEA097 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		18AF9B1F2101924F00DEA097 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		48D9300EE1857DFDB258341B /* Pods-iTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTube/Pods-iTube.debug.xcconfig"; sourceTree = "<group>"; };
+		D495556103A62E25C38B48F9 /* Pods-iTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTube/Pods-iTube.release.xcconfig"; sourceTree = "<group>"; };
+		D8156F2A792F1FFE83765C0F /* Pods_iTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124BF7B13600F0CDDC083C3D /* Pods_iTube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051CA7C0A8DEEC18D2919619 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48D9300EE1857DFDB258341B /* Pods-iTube.debug.xcconfig */,
+				D495556103A62E25C38B48F9 /* Pods-iTube.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		18AF9AF521018C5900DEA097 = {
 			isa = PBXGroup;
 			children = (
 				18AF9B0021018C5A00DEA097 /* iTube */,
 				18AF9AFF21018C5A00DEA097 /* Products */,
+				051CA7C0A8DEEC18D2919619 /* Pods */,
+				E595E41D919E81858030E7D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,64 @@
 		18AF9B0021018C5A00DEA097 /* iTube */ = {
 			isa = PBXGroup;
 			children = (
+				18AF9B182101906600DEA097 /* Shared */,
+				18AF9B172101905100DEA097 /* Network */,
+				18AF9B162101903600DEA097 /* Controllers */,
+				18AF9B152101903000DEA097 /* Cells */,
+				18AF9B1321018CA000DEA097 /* SupportingFiles */,
+			);
+			path = iTube;
+			sourceTree = "<group>";
+		};
+		18AF9B1321018CA000DEA097 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				18AF9B0121018C5A00DEA097 /* AppDelegate.swift */,
-				18AF9B0321018C5A00DEA097 /* ViewController.swift */,
-				18AF9B0521018C5A00DEA097 /* Main.storyboard */,
 				18AF9B0821018C5B00DEA097 /* Assets.xcassets */,
 				18AF9B0A21018C5B00DEA097 /* LaunchScreen.storyboard */,
 				18AF9B0D21018C5B00DEA097 /* Info.plist */,
 			);
-			path = iTube;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		18AF9B152101903000DEA097 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18AF9B162101903600DEA097 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18AF9B19210190CC00DEA097 /* MainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18AF9B172101905100DEA097 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18AF9B1B2101916A00DEA097 /* GenericService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		18AF9B182101906600DEA097 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				18AF9B1D2101921000DEA097 /* Method.swift */,
+				18AF9B1F2101924F00DEA097 /* Object.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E595E41D919E81858030E7D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8156F2A792F1FFE83765C0F /* Pods_iTube.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18AF9B1021018C5B00DEA097 /* Build configuration list for PBXNativeTarget "iTube" */;
 			buildPhases = (
+				279743046461F6EFD1CA21B5 /* [CP] Check Pods Manifest.lock */,
 				18AF9AFA21018C5A00DEA097 /* Sources */,
 				18AF9AFB21018C5A00DEA097 /* Frameworks */,
 				18AF9AFC21018C5A00DEA097 /* Resources */,
+				ADF3D723914FE789E7BF136C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +196,68 @@
 			files = (
 				18AF9B0C21018C5B00DEA097 /* LaunchScreen.storyboard in Resources */,
 				18AF9B0921018C5B00DEA097 /* Assets.xcassets in Resources */,
-				18AF9B0721018C5A00DEA097 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		279743046461F6EFD1CA21B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTube-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADF3D723914FE789E7BF136C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTube/Pods-iTube-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTube/Pods-iTube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18AF9AFA21018C5A00DEA097 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18AF9B0421018C5A00DEA097 /* ViewController.swift in Sources */,
+				18AF9B202101924F00DEA097 /* Object.swift in Sources */,
+				18AF9B1E2101921000DEA097 /* Method.swift in Sources */,
+				18AF9B1A210190CC00DEA097 /* MainTabBarController.swift in Sources */,
 				18AF9B0221018C5A00DEA097 /* AppDelegate.swift in Sources */,
+				18AF9B1C2101916A00DEA097 /* GenericService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18AF9B0521018C5A00DEA097 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18AF9B0621018C5A00DEA097 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18AF9B0A21018C5B00DEA097 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,11 +385,12 @@
 		};
 		18AF9B1121018C5B00DEA097 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D9300EE1857DFDB258341B /* Pods-iTube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NCTK3T989;
-				INFOPLIST_FILE = iTube/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTube/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +404,12 @@
 		};
 		18AF9B1221018C5B00DEA097 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D495556103A62E25C38B48F9 /* Pods-iTube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NCTK3T989;
-				INFOPLIST_FILE = iTube/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTube/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
