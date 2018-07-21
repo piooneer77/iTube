@@ -18,5 +18,9 @@ class Object {
     
     static let layout = UICollectionViewFlowLayout()
     
+    class Controllers {
+        static var categoryController = CategoryController()
+    }
+    
     
 }

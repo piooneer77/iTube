@@ -14,8 +14,8 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         setupControllers()
         setViewsConstraints()
-        view.backgroundColor = UIColor(red: 42, green: 43, blue: 54)
-        tabBar.tintColor = .black
+        view.backgroundColor = .black
+        tabBar.tintColor = Values.tintColor
         tabBar.barStyle = UIBarStyle.black
     }
     
@@ -29,12 +29,12 @@ class MainTabBarController: UITabBarController {
     
     private func setupControllers(){
         setTabImagesAndTitles()
-//        viewControllers = [RegisterController(), SharedObject.offerCollectionViewController, SharedObject.orderCollectionViewController, SharedObject.providerViewController]
+        viewControllers = [Object.Controllers.categoryController]
     }
     
     private func setTabImagesAndTitles(){
-//        SharedObject.basketCollectionViewController.tabBarItem.title = SharedValues.BasketController.tabbarTitle
-//        SharedObject.basketCollectionViewController.tabBarItem.image = SharedValues.BasketController.tabbarIcon
+        Object.Controllers.categoryController.tabBarItem.title = "Channels"
+        Object.Controllers.categoryController.tabBarItem.image = UIImage(named: "gridIcon-Small")
 //
 //        SharedObject.offerCollectionViewController.tabBarItem.title = SharedValues.OfferController.tabbarTitle
 //        SharedObject.offerCollectionViewController.tabBarItem.image = SharedValues.OfferController.tabbarIcon
@@ -57,20 +57,17 @@ extension MainTabBarController {
     fileprivate func setViewsConstraints() {
         addSubViewsInsideMainViews()
         setPlayerViewConstraints(control: playerView)
-//        setTabsViewConstraints(control: tabBarView)
     }
     
     private func addSubViewsInsideMainViews(){
         view.addSubview(playerView)
-//        view.addSubview(tabBarView)
-        
     }
     
     private func setPlayerViewConstraints(control: UIView){
         NSLayoutConstraint.activate([
             control.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             control.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            control.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.35),
+            control.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.30),
             control.leadingAnchor.constraint(equalTo: view.leadingAnchor)
             ])
     }
