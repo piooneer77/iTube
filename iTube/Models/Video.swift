@@ -6,13 +6,15 @@
 //  Copyright © 2018 syntaxerror. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Video {
     
     var id: String?
     var name: String?
+    var channel: String?
     var url: URL?
+    var thumb: UIImage?
     var category: Category?
     
 }

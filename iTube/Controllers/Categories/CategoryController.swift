@@ -48,7 +48,7 @@ extension CategoryController {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Values.CellId.categoryCellId, for: indexPath) as! CategoryCell
-        Method.addShadowAndCornerRadiasTo(cell: cell, cornerRadias: 10, borderWidth: 2, borderColor: UIColor.clear.cgColor, shadowColor: UIColor.gray.cgColor, shadowOffsetWidth: 3, shadowOffsetHeight: 5, shadowRadius: 10)
+        Method.addShadowAndCornerRadiasTo(cell: cell, cornerRadias: 10, borderWidth: 2, borderColor: UIColor.clear.cgColor, shadowColor: UIColor.clear.cgColor, shadowOffsetWidth: 3, shadowOffsetHeight: 5, shadowRadius: 10)
         return cell
     }
     
@@ -77,7 +77,7 @@ extension CategoryController {
         NSLayoutConstraint.activate([
             control.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Method.calculateTabBarHeight(tabController: tabBarController) * -1),
             control.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            control.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
+            control.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
             control.leadingAnchor.constraint(equalTo: view.leadingAnchor)
             ])
     }

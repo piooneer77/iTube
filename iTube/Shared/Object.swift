@@ -20,6 +20,7 @@ class Object {
     
     class Controllers {
         static var categoryController = CategoryController()
+        static let favouriteController = FavouriteController()
     }
     
     

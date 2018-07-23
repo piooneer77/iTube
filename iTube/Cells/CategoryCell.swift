@@ -33,7 +33,7 @@ class CategoryCell: UICollectionViewCell {
     let actionButton: UIButton = {
         let view = UIButton()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
+        view.setImage(UIImage(named: "circles"), for: .normal)
         return view
     }()
     
@@ -78,9 +78,9 @@ extension CategoryCell {
     private func setCategoryImageViewConstraints(control: UIImageView){
         NSLayoutConstraint.activate([
             control.topAnchor.constraint(equalTo: self.topAnchor, constant: Values.defaultPadding),
-            control.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.25),
+            control.widthAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2),
             control.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Values.defaultPadding),
-            control.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.25)
+            control.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.4)
             ])
     }
     
@@ -89,7 +89,7 @@ extension CategoryCell {
             control.topAnchor.constraint(equalTo: self.topAnchor, constant: Values.defaultPadding),
             control.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.2),
             control.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: Values.defaultPadding * -1),
-            control.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.2)
+            control.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.3)
             ])
     }
     
